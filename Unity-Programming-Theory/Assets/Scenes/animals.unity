@@ -981,13 +981,13 @@ MonoBehaviour:
   catPrefab: {fileID: 3587674930690280496, guid: cbc2b79f5642c1144897e8d790e9d4a6, type: 3}
   dogPrefab: {fileID: 2638821338247406891, guid: 649cc465d4635eb41a0187006f223fcf, type: 3}
   penguinPrefab: {fileID: 1264466722714147946, guid: dd2eaa3c553ee264da037148e4295f80, type: 3}
-  lionButton: {fileID: 0}
-  dogButton: {fileID: 0}
-  catButton: {fileID: 0}
-  penguinButton: {fileID: 0}
-  idleButton: {fileID: 0}
-  walkButton: {fileID: 0}
-  jumpButton: {fileID: 0}
+  lionButton: {fileID: 1625149619}
+  dogButton: {fileID: 1605784248}
+  catButton: {fileID: 600736438}
+  penguinButton: {fileID: 769218264}
+  idleButton: {fileID: 1416606411}
+  walkButton: {fileID: 1983205594}
+  jumpButton: {fileID: 240196766}
 --- !u!4 &1111740226
 Transform:
   m_ObjectHideFlags: 0
