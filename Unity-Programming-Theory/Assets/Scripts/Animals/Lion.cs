@@ -8,4 +8,19 @@ public class Lion : Animal
     {
 
     }
+
+    public override void Idle()
+    {
+        base.Idle();
+    }
+
+    public override void Walk()
+    {
+        base.Walk();
+    }
+
+    public override void Jump()
+    {
+        base.Jump();
+    }
 }

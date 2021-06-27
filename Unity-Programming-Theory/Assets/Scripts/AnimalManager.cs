@@ -38,6 +38,10 @@ public class AnimalManager : MonoBehaviour
         catButton.onClick.AddListener(() => { SelectAnimal("cat"); });
         dogButton.onClick.AddListener(() => { SelectAnimal("dog"); });
         penguinButton.onClick.AddListener(() => { SelectAnimal("penguin"); });
+
+        idleButton.onClick.AddListener(() => { SelectedAction("idle"); });
+        walkButton.onClick.AddListener(() => { SelectedAction("walk"); });
+        jumpButton.onClick.AddListener(() => { SelectedAction("jump"); });
     }
 
     // Update is called once per frame
@@ -136,6 +140,28 @@ public class AnimalManager : MonoBehaviour
     private void SetButtonDeselected(Button button)
     {
         button.GetComponent<Image>().color = Color.white;
+    }
+
+    private void SelectedAction(string action)
+    {
+        Debug.Log("action walk");
+        switch (action)
+        {
+            case "idle":
+                selectedAnimal.Idle();
+                break;
+
+            case "walk":
+                selectedAnimal.Walk();
+                break;
+
+            case "jump":
+                selectedAnimal.Jump();
+                break;
+
+            default:
+                break;
+        }
     }
 
 }
